@@ -55,7 +55,7 @@ jobs:
           uses: docker/build-push-action@v2
           with:
             push: true
-            tags: plahotniy/yamdb_final:v1
+            tags: plahotniy/yamdb_final:latest
 
   deploy:
       runs-on: ubuntu-latest
