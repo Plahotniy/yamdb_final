@@ -10,7 +10,7 @@ services:
 
   web:
 #    build: ../api_yamdb
-    image: plahotniy/yamdb_final:latest
+    image: plahotniy/yamdb_final
     restart: always
     volumes:
       - static_value:/app/static/
