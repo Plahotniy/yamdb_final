@@ -32,6 +32,8 @@ jobs:
         cd api_yamdb/
         # запустить написанные разработчиком тесты
         python manage.py test
+        cd yamdb_final
+        pytest.exe
 
   build_and_push_to_docker_hub:
       name: Push Docker image to Docker Hub
