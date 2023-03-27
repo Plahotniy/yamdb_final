@@ -9,7 +9,6 @@ services:
       - .env
 
   web:
-#    build: ../api_yamdb
     image: plahotniy/yamdb_final
     restart: always
     volumes:
