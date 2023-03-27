@@ -32,8 +32,8 @@ jobs:
         cd api_yamdb/
         # запустить написанные разработчиком тесты
         python manage.py test
-#        cd ..
-#        python -m pytest
+        cd ..
+        python -m pytest
 
   build_and_push_to_docker_hub:
       name: Push Docker image to Docker Hub
@@ -72,7 +72,7 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
 #          passphrase: ${{ secrets.PASSPHRASE }} # Если ваш ssh-ключ защищён фразой-паролем
           script: |
-            sudo systemctl stop ngnix
+            sudo systemctl stop nginx
             sudo docker-compose stop
             sudo docker-compose rm web
             sudo docker pull plahotniy/yamdb_final
